@@ -145,11 +145,9 @@ class Blockchain(object):
         # Replace our chain if we discovered a valid newer, longer, chain
         if new_chain:
             self.chain = new_chain
-                return True
+            return True
 
         return False
-
-
 
     def register_node(self, address):
         """
